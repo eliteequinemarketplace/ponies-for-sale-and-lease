@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ponies for Kids for Sale | Safe Hunter & Children's Ponies | Elite Equine Marketplace</title>
+  <meta name="description" content="Browse ponies for kids for sale or lease including kid-friendly mounts, beginner through show-ready ponies, and ponies that may be qualified for Pony Finals or championship competition.">
+  <meta name="keywords" content="ponies for kids for sale, ponies qualified for Pony Finals, children's pony hunter, short stirrup pony, leadline pony, beginner safe pony, medium pony hunter, large pony hunter, pony jumper prospect, small pony hunter for sale, green pony hunter for sale, pony for sale or lease, USEF Pony Finals pony, Marshall Sterling Pony Medal, pony hunters for sale near Wellington Florida, pony hunters for sale near Ocala Florida, ponies for kids near me, BigEq alternative, ProEquest alternative, Hunter Jumper Exchange alternative">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ponies for Kids for Sale | Elite Equine Marketplace">
+  <meta property="og:description" content="Discover ponies for kids including safe beginner ponies, children's hunter ponies, short stirrup ponies, and competitive pony hunters for sale or lease.">
+  <meta property="og:url" content="https://eliteequinemarketplace.github.io/ponies-for-kids-for-sale/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Elite Equine Marketplace">
+  <link rel="canonical" href="https://eliteequinemarketplace.github.io/ponies-for-kids-for-sale/">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C97A;
+      --dark: #0D0D0D;
+      --dark-2: #141414;
+      --dark-3: #1C1C1C;
+      --cream: #F5F0E8;
+      --text: #E8E0D0;
+      --text-muted: #9A8F7E;
+      --border: rgba(201,168,76,0.2);
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--dark); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; overflow-x: hidden; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 2.5rem; background: rgba(13,13,13,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--gold); letter-spacing: 0.05em; text-decoration: none; }
+    .nav-cta { background: var(--gold); color: var(--dark); padding: 0.5rem 1.4rem; border-radius: 2px; font-size: 0.8rem; font-weight: 500; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--gold-light); }
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 7rem 2rem 4rem; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%), radial-gradient(ellipse 60% 40% at 80% 80%, rgba(201,168,76,0.04) 0%, transparent 60%); }
+    .hero-eyebrow { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s 0.2s forwards; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 7vw, 5.5rem); line-height: 1.1; color: var(--cream); margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s 0.4s forwards; }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero-sub { max-width: 600px; font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2.5rem; opacity: 0; animation: fadeUp 0.8s 0.6s forwards; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; opacity: 0; animation: fadeUp 0.8s 0.8s forwards; }
+    .btn-primary { background: var(--gold); color: var(--dark); padding: 0.9rem 2.2rem; border-radius: 2px; font-size: 0.85rem; font-weight: 500; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; display: inline-block; }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn-secondary { border: 1px solid var(--border); color: var(--text); padding: 0.9rem 2.2rem; border-radius: 2px; font-size: 0.85rem; font-weight: 400; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; display: inline-block; }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+    .scroll-line { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; opacity: 0; animation: fadeUp 1s 1.2s forwards; }
+    .scroll-line span { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); }
+    .scroll-line::after { content: ''; width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold), transparent); animation: scrollPulse 2s infinite; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .stat { padding: 2.5rem 2rem; text-align: center; border-right: 1px solid var(--border); }
+    .stat:last-child { border-right: none; }
+    .stat-number { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--gold); line-height: 1; margin-bottom: 0.4rem; }
+    .stat-label { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+    section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+    .section-label { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--cream); line-height: 1.2; margin-bottom: 1.2rem; }
+    h2 em { font-style: italic; color: var(--gold); }
+    .section-intro { max-width: 640px; color: var(--text-muted); font-size: 1rem; margin-bottom: 3rem; }
+    .disciplines-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 2.5rem; }
+    .discipline-card { background: var(--dark-2); padding: 2rem 1.8rem; transition: background 0.2s; text-decoration: none; display: block; }
+    .discipline-card:hover { background: var(--dark-3); }
+    .discipline-icon { font-size: 1.6rem; margin-bottom: 1rem; }
+    .discipline-card h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--cream); margin-bottom: 0.5rem; }
+    .discipline-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+    .discipline-tag { display: inline-block; margin-top: 1rem; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+    .why-text p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; }
+    .why-list { list-style: none; margin: 1.5rem 0 2rem; }
+    .why-list li { display: flex; align-items: flex-start; gap: 0.8rem; padding: 0.8rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text-muted); }
+    .why-list li::before { content: '→'; color: var(--gold); flex-shrink: 0; margin-top: 0.05rem; }
+    .why-features { display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .feature-row { background: var(--dark-2); padding: 1.5rem; display: flex; align-items: center; gap: 1rem; }
+    .feature-num { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--border); width: 2rem; flex-shrink: 0; }
+    .feature-row h4 { font-size: 0.9rem; color: var(--cream); margin-bottom: 0.2rem; font-weight: 500; }
+    .feature-row p { font-size: 0.8rem; color: var(--text-muted); }
+    .seo-content { background: var(--dark-2); border: 1px solid var(--border); padding: 3rem 2rem; max-width: 100%; }
+    .seo-content h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+    .seo-content h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--cream); margin: 2rem 0 0.7rem; }
+    .seo-content p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1rem; line-height: 1.8; }
+    .seo-content a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border); }
+    .seo-content a:hover { border-color: var(--gold); }
+    .keyword-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 1.5rem 0; }
+    .keyword-tag { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border: 1px solid var(--border); color: var(--text-muted); border-radius: 2px; }
+    .cta-banner { background: linear-gradient(135deg, var(--dark-3) 0%, var(--dark-2) 100%); border: 1px solid var(--border); border-top: 2px solid var(--gold); padding: 4rem 2rem; text-align: center; }
+    .cta-banner h2 { margin-bottom: 1rem; }
+    .cta-banner p { color: var(--text-muted); max-width: 500px; margin: 0 auto 2rem; font-size: 0.95rem; }
+    footer { background: var(--dark-2); border-top: 1px solid var(--border); padding: 2rem; text-align: center; }
+    footer p { font-size: 0.78rem; color: var(--text-muted); }
+    footer a { color: var(--gold); text-decoration: none; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes scrollPulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+    @media (max-width: 600px) { .stats { grid-template-columns: 1fr; } .stat { border-right: none; border-bottom: 1px solid var(--border); } nav { padding: 1rem 1.2rem; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="https://eliteequinemarketplace.com" class="nav-logo">Elite Equine Marketplace</a>
+    <a href="https://eliteequinemarketplace.com" class="nav-cta">Browse Ponies</a>
+  </nav>
+
+  <div class="hero">
+    <p class="hero-eyebrow">The Modern Marketplace for the Hunter Jumper World</p>
+    <h1>Ponies for Kids<br>for <em>Sale</em></h1>
+    <p class="hero-sub">Browse safe leadline and beginner ponies, short stirrup ponies, children's hunter ponies, small, medium and large pony hunters, and competitive pony jumper prospects — from trusted trainers and sellers across the globe.</p>
+    <div class="hero-actions">
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="btn-primary">Browse All Ponies</a>
+      <a href="https://eliteequinemarketplace.com" class="btn-secondary">List Your Pony</a>
+    </div>
+    <div class="scroll-line"><span>Scroll</span></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-number">500+</div>
+      <div class="stat-label">Horses & Ponies Listed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">🌍</div>
+      <div class="stat-label">Worldwide Listings</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Hunter Jumper Focused</div>
+    </div>
+  </div>
+
+  <section>
+    <p class="section-label">Browse by Division</p>
+    <h2>Find the <em>Perfect</em> Pony</h2>
+    <p class="section-intro">Whether you are searching for a safe first pony for a young beginner, a competitive show pony for the children's hunter divisions, or a Pony Finals-qualified mount, Elite Equine Marketplace connects families and trainers with trusted pony sellers worldwide.</p>
+
+    <div class="disciplines-grid">
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">🏆</div>
+        <h3>Ponies Qualified for Pony Finals</h3>
+        <p>Small, medium, and large pony hunters qualified for the USEF Pony Hunter National Championship at the Kentucky Horse Park — the most prestigious pony competition in the country. Regular and green sections across all three sizes.</p>
+        <img src="" alt="children's hunter pony competing in pony division" style="display:none;">
+        <span class="discipline-tag">Browse Pony Finals Ponies →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">🌟</div>
+        <h3>Large Pony Hunters for Sale — 2'9"–3'0"</h3>
+        <p>Large ponies (14.2hh & under) competing at 2'9"–3'0" for riders 17 & under. The most competitive and prestigious pony division — large pony hunters with exceptional movement, jump style, and show records from top trainers worldwide.</p>
+        <img src="" alt="large pony hunter jumping oxer" style="display:none;">
+        <span class="discipline-tag">Browse Large Ponies →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">🎖️</div>
+        <h3>Medium Pony Hunters for Sale — 2'6"</h3>
+        <p>Medium ponies (13.2hh & under) competing at 2'6" for riders 14 & under. Quality medium pony hunters with the movement and jump style to win at local and USEF-rated shows through Pony Finals.</p>
+        <img src="" alt="medium pony hunter competing in show ring" style="display:none;">
+        <span class="discipline-tag">Browse Medium Ponies →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">🐴</div>
+        <h3>Small Pony Hunters for Sale — 2'3"</h3>
+        <p>Small ponies (12.2hh & under) competing at 2'3" for riders 12 & under. Safe, well-trained small pony hunters for young riders — from first show ponies to competitive small ponies with Pony Finals records.</p>
+        <img src="" alt="safe pony for kids jumping small fence" style="display:none;">
+        <span class="discipline-tag">Browse Small Ponies →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">🌱</div>
+        <h3>Children's Hunter Ponies for Sale</h3>
+        <p>Trustworthy, safe ponies for the children's hunter pony division. Small and medium ponies competing at 2' and 2'6" for young riders in children's pony hunter sections at local and rated shows.</p>
+        <img src="" alt="children's hunter pony competing in pony division" style="display:none;">
+        <span class="discipline-tag">Browse Children's Ponies →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">⭐</div>
+        <h3>Short Stirrup Ponies for Sale</h3>
+        <p>Safe, patient, and confidence-building ponies for the short stirrup division — ideal for young riders taking their first steps in the show ring. Consistent, forgiving ponies that make showing fun for beginners.</p>
+        <img src="" alt="short stirrup pony hunter jumping course" style="display:none;">
+        <span class="discipline-tag">Browse Short Stirrup Ponies →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">🎀</div>
+        <h3>Leadline Ponies for Sale</h3>
+        <p>Gentle, quiet leadline ponies for the very youngest riders. Safe, steady, and calm with young children — the perfect first pony experience for toddlers and beginner riders just starting their equestrian journey.</p>
+        <img src="" alt="leadline pony for beginner child rider" style="display:none;">
+        <span class="discipline-tag">Browse Leadline Ponies →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">🔮</div>
+        <h3>Green Pony Hunters for Sale</h3>
+        <p>Young or inexperienced ponies with the movement and temperament to develop into competitive show ponies. Green pony hunters eligible for USEF Pony Finals green sections — ideal for programs developing a pony for the long term.</p>
+        <span class="discipline-tag">Browse Green Ponies →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">⬆️</div>
+        <h3>Pony Jumper Prospects for Sale</h3>
+        <p>Athletic, scopey ponies for the USEF Pony Jumper National Championships. Small (.60–.70m), medium (.70–.80m), and large (.80–.90m) pony jumpers with the carefulness and scope to compete at the national championship level.</p>
+        <span class="discipline-tag">Browse Pony Jumpers →</span>
+      </a>
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="discipline-card">
+        <div class="discipline-icon">🔄</div>
+        <h3>Ponies for Lease</h3>
+        <p>Full leases, half leases, and show leases on quality show ponies. Children's hunter pony leases, short stirrup pony leases, and competitive pony hunter leases from trusted sellers worldwide.</p>
+        <span class="discipline-tag">Browse Pony Leases →</span>
+      </a>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="btn-primary">View All Ponies</a>
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="why-grid">
+      <div class="why-text">
+        <p class="section-label">Why Elite Equine</p>
+        <h2>The Right Pony for <em>Every</em> Rider</h2>
+        <p>Finding the right pony for a young rider is one of the most important decisions a family can make. Elite Equine Marketplace connects families and trainers with trusted pony sellers across the globe — from safe beginner ponies to competitive Pony Finals champions.</p>
+        <ul class="why-list">
+          <li>Listings include photos, video, and full show records</li>
+          <li>Filter by pony size, height, experience level, and price</li>
+          <li>Connect directly with sellers — no middleman, no commissions</li>
+          <li>Ponies from the US, Canada, Europe, and across the globe</li>
+          <li>Sale and lease options available across all divisions</li>
+          <li>Available on iOS and Android for browsing on the go</li>
+        </ul>
+        <a href="https://eliteequinemarketplace.com" class="btn-primary">Visit the Marketplace</a>
+      </div>
+      <div class="why-features">
+        <div class="feature-row">
+          <div class="feature-num">01</div>
+          <div>
+            <h4>All Three Sizes</h4>
+            <p>Small, medium, and large pony hunters across every division and experience level.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-num">02</div>
+          <div>
+            <h4>Verified Show Records</h4>
+            <p>Browse ponies with documented Pony Finals qualifications and competition history.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-num">03</div>
+          <div>
+            <h4>Sale & Lease Options</h4>
+            <p>Both purchase and lease options available — find the right arrangement for your family.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-num">04</div>
+          <div>
+            <h4>Global Inventory</h4>
+            <p>Ponies from the US, Canada, UK, Europe, and beyond.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="seo-content">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <p class="section-label">Buyer's Guide</p>
+      <h2>Ponies for Kids for Sale — Everything You Need to Know</h2>
+
+      <div class="keyword-tags">
+        <span class="keyword-tag">Ponies for Kids for Sale</span>
+        <span class="keyword-tag">Pony Finals Qualified</span>
+        <span class="keyword-tag">Large Pony Hunter 2'9"–3'0"</span>
+        <span class="keyword-tag">Medium Pony Hunter 2'6"</span>
+        <span class="keyword-tag">Small Pony Hunter 2'3"</span>
+        <span class="keyword-tag">Short Stirrup Pony</span>
+        <span class="keyword-tag">Leadline Pony</span>
+        <span class="keyword-tag">Green Pony Hunter</span>
+        <span class="keyword-tag">Pony Jumper Prospect</span>
+        <span class="keyword-tag">Ponies for Lease</span>
+        <span class="keyword-tag">Wellington &amp; Ocala FL</span>
+        <span class="keyword-tag">Marshall Sterling Pony Medal</span>
+      </div>
+
+      <p>Finding the right pony for a young rider is one of the most important steps in developing confidence and success in the show ring. Elite Equine Marketplace helps families, trainers, and riders connect with ponies for kids that are suitable for beginner riders, short stirrup divisions, children's pony hunters, and competitive large pony divisions.</p>
+
+      <p>Many families search for safe, experienced ponies that can help young riders learn correct riding fundamentals while also gaining confidence in the show ring. Our marketplace features ponies for kids that range from quiet leadline and beginner ponies to competitive pony hunters capable of showing in USEF-rated competitions. Some may be qualified for Pony Finals, offering competitive opportunities for ambitious young riders.</p>
+
+      <h3>USEF Pony Finals — The Pinnacle of Pony Competition</h3>
+      <p>The USEF Pony Hunter National Championship, presented by Marshall + Sterling, is held annually at the Kentucky Horse Park in Lexington, Kentucky each August — the most prestigious pony competition in the country. Typically more than 600 ponies compete each year across six divisions: small green, medium green, large green, small regular, medium regular, and large regular. Each division is judged in three phases: the model (conformation and way of moving), under saddle, and over fences — with the model counting 25%, under saddle 25%, and over fences 50% of the final score.</p>
+      <p>To qualify for Pony Finals, a pony must earn a Champion or Reserve Champion at a USEF Premier ("AA") or National ("A") rated show during the qualifying period. Ponies must be registered with both USEF and USHJA and have a valid current measurement card. A Pony Finals-qualified pony represents the gold standard in the pony hunter market and is among the most sought-after ponies for competitive junior families.</p>
+
+      <h3>Large Pony Hunters for Sale — 2'9"–3'0"</h3>
+      <p>Large ponies must not exceed 14.2 hands and may be ridden by junior riders 17 and under. They compete at 2'9"–3'0" in the regular large pony hunter division — the most competitive and prestigious pony division in the sport. The best large pony hunters combine exceptional movement, a naturally flat and floating hunter jump, beautiful manners, and the substance and quality to compete at the very top of the division at Pony Finals and beyond. Elite Equine Marketplace lists large pony hunters with full show records, video, model footage, and direct contact with the selling trainer.</p>
+
+      <h3>Medium Pony Hunters for Sale — 2'6"</h3>
+      <p>Medium ponies must not exceed 13.2 hands and may be ridden by junior riders 14 and under. They compete at 2'6" in the regular medium pony hunter division. Medium ponies are one of the most popular pony sizes — a perfect fit for growing junior riders who have moved up from small ponies and are developing their skills at a competitive height. Elite Equine Marketplace lists medium pony hunters from trusted sellers across the globe, from seasoned show ponies with Pony Finals records to talented green medium ponies ready to develop.</p>
+
+      <h3>Small Pony Hunters for Sale — 2'3"</h3>
+      <p>Small ponies must not exceed 12.2 hands and may be ridden by junior riders 12 and under. They compete at 2'3" in the regular small pony hunter division. Small ponies are often a young rider's first show pony — they need to be genuinely safe and forgiving while also having the quality and movement to compete successfully at local and rated shows. Elite Equine Marketplace lists small pony hunters from beginner-safe ponies through Pony Finals-qualified champions.</p>
+
+      <h3>Green Pony Hunters for Sale</h3>
+      <p>The USEF Pony Finals green divisions are for ponies in their first or second year competing at the pony hunter height. A green pony can only compete in the green section at Pony Finals once — making green Pony Finals participation a unique milestone in a pony's career. Green pony hunters are ideal for programs looking to develop a pony for the long term, or for families who want a talented young pony with the potential to grow into a competitive regular division pony. Green ponies qualify for Pony Finals by winning one Championship or two Reserve Championships in a USEF Premier or National rated green pony section during the qualifying period.</p>
+
+      <h3>Short Stirrup Ponies for Sale</h3>
+      <p>Short stirrup is one of the most important and well-loved divisions in the sport — an introduction to the show ring for young riders just beginning their equestrian journey. Short stirrup ponies must be genuinely safe, patient, and forgiving. The ideal short stirrup pony is calm in the ring, consistent over small fences, and kind with young and inexperienced riders. Elite Equine Marketplace lists short stirrup ponies from trusted sellers worldwide — ponies that make showing a joy for beginners and help young riders fall in love with the sport.</p>
+
+      <h3>Leadline Ponies for Sale</h3>
+      <p>Leadline ponies carry the very youngest riders — typically toddlers and children under 6 — in the leadline division at horse shows. The ideal leadline pony is exceptionally quiet, steady, and gentle with small children. They need to be completely bombproof, comfortable with distractions, and happy being led around the ring. Elite Equine Marketplace lists leadline ponies from trusted sellers who understand what families need in a young child's very first pony experience.</p>
+
+      <h3>Pony Jumper Prospects for Sale</h3>
+      <p>The USEF Pony Jumper National Championships are held each year at Pony Finals at the Kentucky Horse Park, featuring small (.60–.70m, riders 12 & under), medium (.70–.80m, riders 14 & under), and large (.80–.90m, riders 16 & under) categories. Pony jumper prospects must be athletic, careful, and scopey — qualities that make them exciting to develop for the national championship level. Elite Equine Marketplace lists pony jumper prospects from reputable sellers and trainers worldwide.</p>
+
+      <h3>Marshall + Sterling / USEF Pony Medal</h3>
+      <p>The Marshall + Sterling / USEF Pony Medal Final is held at USEF Pony Finals each year in the Alltech Arena at the Kentucky Horse Park. Riders must earn 30 qualifying points in USEF Pony Medal classes during the qualifying period to be eligible for the Final. Pony Medal horses must have the movement and adjustability for equitation-style rounds — an additional quality that makes a pony medal-eligible mount one of the most versatile and valued ponies on the market.</p>
+
+      <h3>Ponies for Sale Near Wellington, FL & Ocala, FL</h3>
+      <p>Wellington, Florida and Ocala, Florida are home to some of the most competitive pony programs in the country. Elite Equine Marketplace lists ponies for sale and lease near Wellington, FL and near Ocala, FL — giving families and trainers direct access to ponies campaigned by top professionals on the Florida winter circuit. Whether you are looking for a pony to trial in Wellington or a year-round pony based in Ocala, Elite Equine Marketplace connects you with sellers in both markets.</p>
+
+      <h3>Where to List Your Pony for Sale or Lease</h3>
+      <p>Elite Equine Marketplace is the best place to list your pony for sale or lease. Built exclusively for the hunter jumper community, every buyer browsing your listing is actively searching for a hunter jumper horse or pony — giving your listing maximum exposure to qualified families, trainers, and junior programs across the US, Canada, Europe, and beyond.</p>
+      <p><a href="https://eliteequinemarketplace.com">List your pony on Elite Equine Marketplace →</a></p>
+
+      <h3>Elite Equine Marketplace vs. BigEq, ProEquest & Hunter Jumper Exchange</h3>
+      <p>Families and trainers looking for a BigEq alternative, a ProEquest alternative, or a Hunter Jumper Exchange alternative for ponies will find that Elite Equine Marketplace offers a modern, purpose-built platform designed exclusively for the hunter jumper and pony world. Unlike older classifieds platforms, Elite Equine Marketplace features a clean, mobile-friendly interface, rich listing profiles with video and show records, and a global community built around competitive hunter jumper and pony sport — giving pony sellers and buyers the modern experience they deserve.</p>
+      <p><a href="https://eliteequinemarketplace.com/horses-for-sale-lease">Browse all ponies for sale and lease on Elite Equine Marketplace →</a></p>
+    </div>
+  </div>
+
+  <div class="cta-banner">
+    <p class="section-label">Ready to Find Your Pony?</p>
+    <h2>Browse Ponies for Kids<br>for <em>Sale</em> Today</h2>
+    <p>Join thousands of families, trainers, and junior riders who use Elite Equine Marketplace to find their next leadline pony, short stirrup mount, children's hunter pony, or Pony Finals champion.</p>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <a href="https://eliteequinemarketplace.com/horses-for-sale-lease" class="btn-primary">Browse All Ponies</a>
+      <a href="https://eliteequinemarketplace.com" class="btn-secondary">List Your Pony</a>
+    </div>
+  </div>
+
+  <div style="background: var(--dark-2); border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center;">
+    <p style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem;">Follow Us</p>
+    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.2rem;">Stay connected with the latest listings, news, and updates from the hunter jumper world.</p>
+    <div style="display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap;">
+      <a href="https://www.instagram.com/eliteequinemarketplace" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--border); padding: 0.5rem 1.2rem; border-radius: 2px;">Instagram</a>
+      <a href="https://www.facebook.com/eliteequinemarketplace" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--border); padding: 0.5rem 1.2rem; border-radius: 2px;">Facebook</a>
+      <a href="https://www.tiktok.com/@eliteequinemarketplace" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--border); padding: 0.5rem 1.2rem; border-radius: 2px;">TikTok</a>
+      <a href="https://www.linkedin.com/company/eliteequinemarketplace" target="_blank" style="color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--border); padding: 0.5rem 1.2rem; border-radius: 2px;">LinkedIn</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 <a href="https://eliteequinemarketplace.com">Elite Equine Marketplace</a> · The modern marketplace for the hunter jumper world · <a href="https://eliteequinemarketplace.com">eliteequinemarketplace.com</a></p>
+    <p style="font-size: 0.65rem; color: #555; margin-top: 0.5rem;">Elite Equine Marketplace is not affiliated with BigEq, ProEquest, Hunter Jumper Exchange, or any other equine marketplace.</p>
+  </footer>
+
+</body>
+</html>
